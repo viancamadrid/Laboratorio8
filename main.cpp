@@ -37,7 +37,7 @@ int main(int argc, char const *argv[]){
 				cout<<"Ingrese epoca: ";
 				cin>>epoca;
 				obras.push_back(Literatura(nombre,autor,fecha,genero,epoca));
-			/*}else if(op2==2){
+			}else if(op2==2){
 				double peso;
 				string material;
 				cout<<"Ingrese nombre: ";
@@ -51,7 +51,7 @@ int main(int argc, char const *argv[]){
 				cout<<"Ingrese material: ";
 				cin>>material;
 				obras.push_back(Esculturas(nombre,autor,fecha,peso,material));
-			}else if(op2==3){
+			/*}else if(op2==3){
 				string material, tecnica;
 				cout<<"Ingrese nombre: ";
 				cin>>nombre;
