@@ -15,6 +15,8 @@ using std::string;
 
 int menu();
 int menu2();
+void imprimir(vector<Obras>, vector<Obras>);
+void eliminar(vector<Obras>&,vector<Obras>&);
 
 int main(int argc, char const *argv[]){
 	vector<Obras> obras;
@@ -77,8 +79,11 @@ int main(int argc, char const *argv[]){
 				obras.push_back(Diseno(nombre,autor,fecha,terreno));
 			}
 		}else if(op==2){
-
+			eliminar(obras,eliminadas);
+		}else{
+			imprimir(obras,eliminadas);
 		}
+		op=menu();
 	}
 	return 0;
 }
@@ -88,6 +93,7 @@ int menu(){
 	cout<<"1. Agregar Obras"<<endl;
 	cout<<"2. Eliminar Obras"<<endl;
 	cout<<"3. Reporte"<<endl;
+	cout<<"4. Salir"<<endl;
 	cout<<"Ingrese Opcion: ";
 	cin>>opcion;
 	return opcion;
@@ -102,4 +108,30 @@ int menu2(){
 	cout<<"Ingrese Opcion: ";
 	cin>>opcion;
 	return opcion;
+}
+
+void imprimir(vector<Obras> obras, vector<Obras> eliminadas){
+	cout<<"---Obras Existentes---"<<endl;
+	for (int i = 0; i < obras.size(); ++i){
+		cout<<obras.at(i).toString()<<endl;
+	}
+	
+	cout<<"---Obras Transferidas---"<<endl;
+	for (int i = 0; i < eliminadas.size(); ++i){
+		cout<<eliminadas.at(i).toString()<<endl;
+	}
+	return;
+}
+
+void eliminar(vector<Obras>& obras, vector<Obras>& eliminadas){
+	int pos;
+	cout<<"---Obras Existentes---"<<endl;
+	for (int i = 0; i < obras.size(); ++i){
+		cout<<i<<" "<<obras.at(i).toString()<<endl;
+	}
+	cout<<"Posicion a Transferir: ";
+	cin>>pos;
+	obras.erase(obras.begin()+pos);
+	eliminadas.push_back(obras.at(pos));
+	return;
 }
