@@ -10,6 +10,6 @@ Obras::~Obras(){}
 
 string Obras::toString()const{
 	stringstream ss;
-	ss<<"Nombre: "<<nombre<<" "<<"Autor: "<<autor<<"Fecha: "<<fecha;
+	ss<<"Nombre: "<<nombre<<" "<<"Autor: "<<autor<<" Fecha: "<<fecha;
 	return ss.str();
 }

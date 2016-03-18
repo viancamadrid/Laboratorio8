@@ -131,7 +131,7 @@ void eliminar(vector<Obras>& obras, vector<Obras>& eliminadas){
 	}
 	cout<<"Posicion a Transferir: ";
 	cin>>pos;
-	obras.erase(obras.begin()+pos);
 	eliminadas.push_back(obras.at(pos));
+	obras.erase(obras.begin()+pos);
 	return;
 }
