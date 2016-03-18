@@ -65,7 +65,16 @@ int main(int argc, char const *argv[]){
 				cin>>tecnica;
 				obras.push_back(Pinturas(nombre,autor,fecha,material,tecnica));
 			}else{
-
+				string terreno;
+				cout<<"Ingrese nombre: ";
+				cin>>nombre;
+				cout<<"Ingrese autor: ";
+				cin>>autor;
+				cout<<"Ingrese fecha: ";
+				cin>>fecha;
+				cout<<"Ingrese terreno: ";
+				cin>>terreno;
+				obras.push_back(Diseno(nombre,autor,fecha,terreno));
 			}
 		}else if(op==2){
 
