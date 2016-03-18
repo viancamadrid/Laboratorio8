@@ -51,7 +51,7 @@ int main(int argc, char const *argv[]){
 				cout<<"Ingrese material: ";
 				cin>>material;
 				obras.push_back(Esculturas(nombre,autor,fecha,peso,material));
-			/*}else if(op2==3){
+			}else if(op2==3){
 				string material, tecnica;
 				cout<<"Ingrese nombre: ";
 				cin>>nombre;
@@ -63,7 +63,7 @@ int main(int argc, char const *argv[]){
 				cin>>material;
 				cout<<"Ingrese tecnica: ";
 				cin>>tecnica;
-				obras.push_back(Pinturas(nombre,autor,fecha,material,tecnica));*/
+				obras.push_back(Pinturas(nombre,autor,fecha,material,tecnica));
 			}else{
 
 			}
