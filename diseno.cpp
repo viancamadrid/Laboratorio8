@@ -6,7 +6,7 @@
 using std::string;
 using std::stringstream;
 
-Diseno::Diseno(string terreno):Obras(nombre, autor, fecha){
+Diseno::Diseno(string nombre, string autor, string fecha, string terreno):Obras(nombre, autor, fecha),terreno(terreno){
 }
 
 Diseno::~Diseno(){	

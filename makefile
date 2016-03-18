@@ -1,7 +1,7 @@
-obra: obras.o main.o pinturas.o esculturas.o
-	g++ obras.o main.o pinturas.o -o obra
+obra: obras.o main.o pinturas.o esculturas.o literatura.o diseno.o
+	g++ obras.o main.o pinturas.o esculturas.o literatura.o diseno.o -o obra
 
-main.o: main.cpp obras.h pinturas.h
+main.o: main.cpp obras.h pinturas.h esculturas.h literatura.h diseno.h
 	g++ -c main.cpp
 
 obras.o: obras.cpp obras.h

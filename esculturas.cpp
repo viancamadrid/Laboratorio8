@@ -6,7 +6,7 @@
 using std::string;
 using std::stringstream;
 
-Esculturas::Esculturas(double peso, string material):Obras(nombre, autor, fecha){
+Esculturas::Esculturas(string nombre, string autor, string fecha, double peso, string material):Obras(nombre, autor, fecha),peso(peso),material(material){
 }
 
 Esculturas::~Esculturas(){	

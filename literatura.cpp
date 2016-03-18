@@ -6,7 +6,7 @@
 using std::string;
 using std::stringstream;
 
-Literatura::Literatura(string genero, string epoca):Obras(nombre, autor, fecha){
+Literatura::Literatura(string nombre, string autor, string fecha, string genero, string epoca):Obras(nombre, autor, fecha),genero(genero),epoca(epoca){
 }
 
 Literatura::~Literatura(){	

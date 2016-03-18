@@ -9,7 +9,7 @@ class Esculturas: public Obras{
 	double peso;
 	string material;
 public:
-	Esculturas(double, string);
+	Esculturas(string, string, string, double, string);
 	virtual ~Esculturas();
 	virtual string toString()const;	
 };

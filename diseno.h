@@ -8,7 +8,7 @@ using std::string;
 class Diseno: public Obras{
 	string terreno;
 public:
-	Diseno(string);
+	Diseno(string, string, string, string);
 	virtual ~Diseno();
 	virtual string toString()const;	
 };
